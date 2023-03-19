@@ -1,0 +1,129 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(133, 225, 233),
+    rgb(123, 199, 126)
+  );
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin: 1rem;
+    h1 {
+      color: white;
+      font-size: 3rem;
+    }
+  }
+  form {
+    input {
+      width: 50%;
+      padding: 0.2rem;
+    }
+    input[type="number"] {
+      width: 30px;
+      text-align: center;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    button {
+      padding: 0.3rem;
+      background-color: rgb(69, 151, 213);
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  div.sort {
+    button {
+      padding: 0.3rem;
+      background-color: rgb(69, 151, 213);
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .add_Div {
+      display: flex;
+      width: 30vw;
+      margin: 0.2rem 0.2rem;
+      p {
+        display: flex;
+        background-color: white;
+        color: black;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.25rem;
+        align-items: center;
+      }
+      p.add_toText {
+        width: 50%;
+      }
+      p.add_toTextDate {
+        width: 20%;
+      }
+    }
+    .done {
+      p {
+        text-decoration: line-through;
+        opacity: 0.7;
+      }
+    }
+
+    button.complete {
+      padding: 0.25rem 0.5rem;
+      color: white;
+      background-color: red;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    button.trash {
+      padding: 0.25rem 0.5rem;
+      color: white;
+      background-color: rgb(113, 207, 113);
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
